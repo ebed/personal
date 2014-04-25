@@ -8,12 +8,14 @@ gem 'capybara'
 gem 'launchy'
 gem 'bootstrap-sass'
 gem 'less'
+
 group :development, :test do
 	gem 'mysql'
 end
-
-gem 'pg'
-
+group :production do
+	gem 'pg'
+	gem 'rails_12factor'
+end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.0'
@@ -52,4 +54,3 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'rails_12factor', group: :production
