@@ -8,7 +8,12 @@ gem 'capybara'
 gem 'launchy'
 gem 'bootstrap-sass'
 gem 'less'
-gem 'mysql'
+group :development, :test do
+	gem 'mysql'
+end
+
+gem 'pg'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.0'
