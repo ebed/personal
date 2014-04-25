@@ -7,7 +7,8 @@ gem 'rspec-rails'
 gem 'capybara'
 gem 'launchy'
 gem 'bootstrap-sass'
-
+gem 'less'
+gem 'mysql'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.0'
